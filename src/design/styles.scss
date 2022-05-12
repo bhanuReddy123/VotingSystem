@@ -1,7 +1,11 @@
+body{
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAADICAMAAAA9W+hXAAAAA1BMVEXK5988EYQiAAAANElEQVR4nO3BMQEAAADCoPVP7WsIoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAN1+AABVhDU2QAAAABJRU5ErkJggg==');
+}
 .app {
     margin:5.5%;
+  
     .card {
-      background-color: #C2D9F4;
+      background-color: #CE4747;
       .card-title {
         text-align: center;
         background-color: #2980B9 ;
@@ -11,11 +15,16 @@
         height: auto;
         margin: 2px;
         padding: 2%;
+        border-radius: 10rem;
       }
       button {
         width:100%;
-        background-color: #DE8C69;
+        background-color: #5CD6A4;
       } 
+      
     }
+  }
+  .second{
+    background-color: pink;
   }
   
