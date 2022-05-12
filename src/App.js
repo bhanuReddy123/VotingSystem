@@ -21,9 +21,21 @@ function App() {
     });
     setTeams(teams);
   }
+  function decrementVoteCount(teamId) {
+    teams = teams.map((team) => {
+      if (team._id === teamId) {
+        team.votes = team.votes - 1;
+      }
+      return team;
+    });
+      setTeams(teams);
+
+    
+  }
 
   return (
     <Container className="app">
+      <h1 className="text-center mb-5 mx-auto">CHOOSE YOUR TEAM!!!</h1>
       <Row>
         {teams.map((team) => {
           return (
@@ -31,12 +43,16 @@ function App() {
               <VotingCard
                 team={team}
                 incrementVoteCount={(teamId) => incrementVoteCount(teamId)}
+                decrementVoteCount={(teamId) => decrementVoteCount(teamId)}
               />
             </Col>
           );
         })}
       </Row>
     </Container>
+
   );
+  
+  
 }
 export default App;
